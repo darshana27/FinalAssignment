@@ -1,0 +1,18 @@
+.banner{
+    height:auto;
+    background-image: url('../images/father-son.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardsSection{
+    background-image: url('../images/desert.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin:15px 0 15px 0;
+    padding-bottom: 15px;
+}
+.carouselSection{
+    background-image: url('../images/hbg5.png');
+                background-size: cover;
+                background-repeat:no-repeat;
+}
