@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Vital Partners</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -16,22 +16,30 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({placement:"bottom"});
+    });
+    $(document).ready(function(){
+        $('#imgNo').hover(function(){
+           $('#tooltip').show(); 
+        });
+    });    
+    </script>
 </head>
 <body>
                                         <!--    Navbar Container Starts Here-->
     <div class="container">
-    
-
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="col-12 col-md-4">
-                            <img width="300px" src="images/logo.png"/>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="col-12 col-md-5 text-md-right">
+                            <img id="logo" src="images/logo.png"/>
                         </div>
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-md-7">
                              <div class="row">
-                                <div class="col-12 col-md-6 text-md-right">
+                                <div class="col-12 col-md-5 text-md-right my-auto callUsToday">
                                     <span>Call Us Today! (02) 9017 8413</span>
                                 </div>
-                                <div class="col-10 col-md-6 input-group mb-3">
+                                <div class="col-10 col-md-5 my-auto text-md-center input-group mb-3">
                                     <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
                                         <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
@@ -41,9 +49,9 @@
                                     <span class="navbar-toggler-icon"></span>
                                     </button>
                             </div>
-                            <div class="row">
+                            <div class="row mx-md-5 mx-2">
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
+                                <ul class="navbar-nav my-2">
                                   <li class="nav-item active">
                                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                                   </li>
@@ -73,14 +81,14 @@
                                         <!--Navbar Container Ends Here    -->
                                         
                                         <!--Download Now Section Starts here-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 text-md-right">
+    <div class="container-fluid downloadNowSection">
+        <div class="row my-auto">
+            <div class="col-12 col-md-7 text-md-right text-center my-auto">
                 <img src="images/icon5.png"/>
                 <span>Lorem ipsum dolor sit amet</span>
     <!--            <button type="button">Download now</button>-->    
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5 text-md-left text-center my-auto">
                 <button type="button">Download now</button>
             </div>
         </div>
@@ -89,16 +97,16 @@
     
                                         <!--Banner starts here-->
     <div class="container-fluid banner">
-        <div class="row mx-4">
-            <div class="col-12 col-md-4 text-center">
-                <button type="button"><i class="fa fa-caret-right"></i></button>
+        <div class="row">
+            <div class="col-12 col-md-6 text-center justify-content-center my-auto">
+                <button class="btnPlay" type="button"><i class="fa fa-caret-right"></i></button>
             </div>
-            <div class="col-12 col-md-8 text-center">
-                <div class="row justify-content-center">
+            <div class="col-12 col-md-5 text-center">
+                <div class="row justify-content-center my-5">
                     <p>Lorem ipsum dolor sit amet lorem. It has survived not on?</p>
                 </div>
                 <div class="row justify-content-center">
-                    <button type="button">Contact Us Now! <i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+                    <button class="btnContact" type="button">Contact Us Now! <i class="fab fa-whatsapp" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
@@ -107,9 +115,9 @@
                                         <!--Banner ends here-->
                                         
                                         <!--About us starts here-->
-    <div class="container AboutUs">
-            <div class="row">
-                <div class="col-12 col-md-6">
+    <div class="container-fluid AboutUs my-5">
+            <div class="row container mx-auto">
+                <div class="col-12 offset-md-1 col-md-5 text-md-left">
                      <h1>About Us</h1>
                 <br/>
                 
@@ -133,42 +141,75 @@
                 <br>
                 <button type="button">Contact Us Now!&nbsp;<span><i class="fab fa-whatsapp" aria-hidden="true"></i></span></button>
                 </div>
-                <div class="col-12 col-md-6 my-auto">
-                    <img id="img" src="images/girl.jpg" width="350px"/>
+                <div class="col-12 col-md-5 text-md-center text-left justify-content-center my-auto">
+                    <img class=" my-auto girlImg" src="images/girl.jpg" width="350px"/>
                 </div>
             </div>
     </div>
                                         <!--About us ends here-->
+                                        <!--Steps section starts here-->
+    <div class="container-fluid stepsSection">
+       <div class="container">
+        <div class="row row1 justify-content-center mt-5">
+            <p>How Vital Works</p>
+        </div>
+        <div class="row row2 justify-content-center my-4">
+            <p>Step, Hop or Skip Your Way To Happiness</p>
+        </div>
+        <div class="row row3 justify-content-center my-4">
+            <p class="numbers">
+                       <img id="imgNo" data-toggle="tooltip" title="Pop into our office and meet us face to face" src="images/no_1.png"/>
+                        <span><img src="images/dotted-line.png"></span>
+                        <img id="imgNo" data-toggle="tooltip" title="Pop into our office and meet us face to face" src="images/no_2.png"/>
+                        <span><img src="images/dotted-line.png"></span>
+                        <img id="imgNo" data-toggle="tooltip" title="Pop into our office and meet us face to face" src="images/no_3.png"/>
+                        <span><img src="images/dotted-line.png"></span>
+                        <img id="imgNo" data-toggle="tooltip" title="Pop into our office and meet us face to face" src="images/no_2.png"/>
+                        <span><img src="images/dotted-line.png"></span>
+                        <img id="imgNo" data-toggle="tooltip" title="Pop into our office and meet us face to face" src="images/no_1.png"/>
+                        <span><img src="images/dotted-line.png"></span>
+                        <img id="imgNo"  data-toggle="tooltip" title="Pop into our office and meet us face to face" src="images/no_1.png"/>
+            </p>
+        </div>
+        <div class="row row4 justify-content-center">
+            <div class="container justify-content-center text-center">
+                <p id="tooltip">Pop into our office and meet us face to face</p>
+            </div>
+        </div>
+        </div>
+    </div>
+                                        <!--Steps section ends here-->
                                         <!--Card section starts here-->
     <div class="container-fluid cardsSection">
-                <div class="row text-center">
+                <div class="container row text-center">
+                   <div class="col-12 col-md-9 offset-md-2 my-4">
                     <p>Lorem ipsum is simply a dummy text of the printing and typesetting industry. Lorem ipsum
                        has been the industry's standard ever since the 1500s, when an unknown printer took a 
                        galley of type and scambled it to make a type specimen book.
-                    </p>
+                    </p></div>
                 </div>
-                <div class="row">
-                    <div class="col-12 offset-md-2 col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" src="images/icon2.png" alt="Card image cap">
+                <div class="row mb-5 text-center justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <div class="card mx-md-auto mx-5">
+                            <img class="card-img-top mx-auto my-3" src="images/icon2.png" alt="Card image cap">
                               <div class="card-body mx-auto text-center">
-                                <h5 class="card-title">What is Lorem Ipsum</h5>
-                                <p class="card-text">Lorem ipsum is simply a dummy text of the type setting industry.
-                                    Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and srcambled.
+                                <h5 class="card-title">What is Lorem Ipsum?</h5>
+                                <p class="card-text mx-4">Lorem ipsum is simply a dummy text of the type setting industry.
+                                    Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and srcambled.<br><br>
                                     it to make a type specimen book. It has survived not only for five centuries, but also the leap into we eklectronic typesetting, remaining essentially unchnaged.</p>
-                                <a href="#" class="btn btn-primary">Get Started</a>
+                                <button href="#" class="btn btn-primary">Get Started&nbsp;<span><i class="fa fa-caret-right"></i></span></button>
                               </div>
-                        </div>
+                        </div><br>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
-                            <img class="card-img-top"  src="images/icon3.png" alt="Card image cap">
+                        <div class="card mx-md-auto mx-5">
+                            <img class="card-img-top mx-auto my-3"  src="images/icon3.png" alt="Card image cap">
                               <div class="card-body mx-auto text-center">
-                                <h5 class="card-title">What is Lorem Ipsum</h5>
-                                <p class="card-text">Lorem ipsum is simply a dummy text of the type setting industry.
-                                    Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and srcambled.
+                                <h5 class="card-title">What is Lorem Ipsum?</h5>
+                                <p class="card-text mx-4">Lorem ipsum is simply a dummy text of the type setting industry.
+                                    Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and srcambled.<br><br>
                                     it to make a type specimen book. It has survived not only for five centuries, but also the leap into we eklectronic typesetting, remaining essentially unchnaged.</p>
-                                <a href="#" class="btn btn-primary">Get Started</a>
+                                <button class="btn btn-primary">Get Started&nbsp;<span><i class="fa fa-caret-right"></i></span></button>
                               </div>
                         </div>
                     </div>
@@ -179,15 +220,15 @@
                                         <!--Section Carousel starts here-->
     <div class="container-fluid carouselSection text-center">
         <div class="row justify-content-center">
-            <p>What Our Clients Say</p>
+            <p class="my-5 carouselHeading">What Our Clients Say</p>
         </div>
-            <div class="row mx-auto">
+            <div class="container my-auto row mx-auto text-center my-5">
               <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
 <!--                  <img class="d-block w-100" src="" alt="First slide">-->
                    <div class="d-block w-100">
-                        <img class="img-circle text-center" src="images/girl.jpg" width="100px"/><br>
+                        <img class="rounded-circle text-center my-3" src="images/girl.jpg" width="100px"/><br>
                         <p class="text-center">"Lorem ipsum is simply a dummy text of the type setting industry.<br>
                                         Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s,
                                         when an unknown <br>printer took a galley of type 
@@ -198,7 +239,7 @@
                 <div class="carousel-item">
 <!--                  <img class="d-block w-100" src="..." alt="Second slide">-->
                                   <div class="d-block w-100">
-                        <img class="img-circle text-center" src="images/girl.jpg" width="100px"/><br>
+                        <img class="rounded-circle text-center my-3" src="images/girl.jpg" width="100px"/><br>
                         <p class="text-center">"Lorem ipsum is simply a dummy text of the type setting industry.<br>
                                         Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s,
                                         when an unknown <br>printer took a galley of type 
@@ -209,7 +250,7 @@
                 <div class="carousel-item">
 <!--                  <img class="d-block w-100" src="..." alt="Third slide">-->
                                   <div class="d-block w-100">
-                        <img class="img-circle text-center" src="images/girl.jpg" width="100px"/><br>
+                        <img class="rounded-circle text-center my-3" src="images/girl.jpg" width="100px"/><br>
                         <p class="text-center">"Lorem ipsum is simply a dummy text of the type setting industry.<br>
                                         Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s,
                                         when an unknown <br>printer took a galley of type 
@@ -232,55 +273,55 @@
                                         <!--Section Carousel ends here-->
                                         <!--Section Blog starts here-->
     <div class="container blogSection">
-        <div class="row justify-content-center">
-            <p>Our Latest Blog Posts</p>
+        <div class="row justify-content-center my-5">
+            <p id="blogTitle">Our Latest Blog Posts</p>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card">
+        <div class="row my-5 mx-auto justify-content-center">
+            <div class="col-12 col-md-3">
+                <div class="card mx-auto">
                   <img class="card-img-top" src="images/user3.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Duis eget leo sit amt orci suscipit lacinia mneque</h5>
+                  <div class="card-body text-left">
+                    <h5 class="card-title my-3">Duis eget leo sit amt orci suscipit lacinia mneque</h5>
                     <p class="card-text">Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <button class="btn btn-primary">Read More</button>
                   </div>
-                </div>
+                </div><br>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-3">
             
-                <div class="card">
+                <div class="card mx-auto">
                   <img class="card-img-top" src="images/user3.png" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Duis eget leo sit amt orci suscipit lacinia mneque</h5>
+                    <h5 class="card-title my-3">Duis eget leo sit amt orci suscipit lacinia mneque</h5>
                     <p class="card-text">Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <button class="btn btn-primary">Read More</button>
                   </div>
-                </div>
+                </div><br>
             </div>
             
-            <div class="col-12 col-md-4">
-                <div class="card">
+            <div class="col-12 col-md-3">
+                <div class="card mx-auto">
                   <img class="card-img-top" src="images/user3.png" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Duis eget leo sit amt orci suscipit lacinia mneque</h5>
+                    <h5 class="card-title my-3">Duis eget leo sit amt orci suscipit lacinia mneque</h5>
                     <p class="card-text">Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <button class="btn btn-primary">Read More</button>
                   </div>
-                </div>
+                </div><br>
             </div>
             </div>
         </div>
     
                                         <!--Section Blog ends here-->
                                          <!--Section Footer starts here-->
-    <div class="container-fluid">
+    <div class="container-fluid downloadNowSection">
         <div class="row">
-            <div class="col-12 col-md-6 text-md-right">
+            <div class="col-12 col-md-7 text-md-right text-center">
                 <img src="images/icon5.png"/>
                 <span>Lorem ipsum dolor sit amet</span>
     <!--            <button type="button">Download now</button>-->    
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5 my-auto text-center">
                 <button type="button">Download now</button>
             </div>
         </div>
@@ -288,27 +329,27 @@
         <div class="container-fluid footerSection">
            
             <div class="container">
-               <div class="row">
-                   <div class="col-12 col-md-6 text-center">
-                       <img src="images/logo.png" width="300px"/>
+               <div class="row row1">
+                   <div class="col-12 col-md-5 text-md-right mt-5">
+                       <img id="logo" src="images/logo.png"/>
                    </div>
-                   <div class="col-12 col-md-6 text-center my-auto">
+                   <div class="col-12 col-md-6 text-md-center mt-5">
                        <p>Shortcut your search to happiness right now.<br>Live a life without regrets and take action today!</p>
                    </div>
                </div>
-               <div class="row">
-                   <div class="col-12 col-md-6 text-center">
+               <div class="row row2 my-3">
+                   <div class="col-12 col-md-5 text-md-right mx-4">
                        <p>Call Us Today! (02)9017 8413</p>
                    </div>
-                   <div class="col-12 col-md-6 text-center">
-                       <button class="btn btn-success" type="button">Book an appointment</button>
-                       <button class="btn btn-success" type="button">Contact a consultant</button>
+                   <div class="col-12 col-md-6 text-left ml-4">
+                       <button class="btn" type="button">Book an appointment</button>
+                       <button class="btn" type="button">Contact a consultant</button>
                    </div>
                </div>
             </div>
                         
-            <div class="row mx-5">
-                <div class="col-12 col-md-4">
+            <div class="row rowfooter mx-5 justify-content-center">
+                <div class="col-12 col-md-3 justify-content-center">
                     <h4>CONTACT INFO</h4>
                     <br>
                     <b>4/220 George St,Sydney NSW 2000</b>
@@ -317,7 +358,7 @@
                     <b>Canberra City ACT 2600</b>
                     <p>Phone: (02) 9017 8426<br>Email: info@can.vitalpartners.com.au</p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-3">
                     <h4>RECENT POSTS</h4>
                     <br>
                     <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;How to recover after a bad date</a></li>
@@ -326,7 +367,7 @@
                     <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Review | Vital Partners Derek and Julie</a></li>
                     <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;7 rules for a Happy Relationship | Vital Partners dating Sydney</a></li>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-3 ">
                     <h4>RECENT TWEETS</h4>
                     <br>
                     <li><span><i class="fab fa-twitter" aria-hidden="true"></i></span>&nbsp;Are you being vulnerable to find love? via offline dating agengy Sydney Canberra Vital Partners<br>
@@ -340,12 +381,13 @@
         </div>
                                          <!--Section Footer ends here-->
 <!--              Copyright Section starts here                         -->
-        <div class="container">
+        <div class="container-fluid copyright justify-content-center">
+           <div class="container">
             <div class="row mx-auto">
-                <div class="col-12 col-md-3 text-center" style="border:1px solid black;">
+                <div class="col-12 col-md-3 text-md-right copy my-3">
                     &copy;VitalPartners.com.au
                 </div>
-                <div class="col-12 col-md-5 text-center" style="border:1px solid black;">
+                <div class="col-12 col-md-5 links text-md-center my-3">
                    <span>
                        <a href="#">Contact</a> &nbsp;|&nbsp;
                        <a href="#">Terms Of Use </a> &nbsp;|&nbsp;
@@ -359,16 +401,18 @@
                     <li><a>Disclaimer&nbsp;&nbsp;</a></li>
 -->
                 </div>
-                <div class="col-12 col-md-4 text-center" style="border:1px solid black;">
-                     <p>FOLLOW US: <span><img src="images/icon10.png"/></span>
-                    <span><img src="images/icon11.png"/></span>
-                    <span><img src="images/icon12.png"/></span>
-                    <span><img src="images/icon13.png"/></span>
-                    <span><img src="images/icon14.png"/></span></p>
+                <div class="col-12 col-md-4 share text-md-left mt-2">
+                    <p>FOLLOW US: 
+                    <span><a href="#"><i class="fab fa-facebook-square"></i></a></span>
+                    <span><a href="#"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                    <span><a href="#"><i class="fab fa-youtube-square"></i></a></span>
+                    <span><a href="#"><i class="fab fa-google-plus-square"></i></a></span></p>
                 </div>
-            </div>                             
+            </div> 
+            </div>                            
         </div>
-                                       <!--              Everything ends here haaassshhhhhhhh                         -->
+                                       <!-- Everything ends here -->
                                         
 
 </body>
